@@ -40,8 +40,9 @@ export default function App() {
   }
 
   //Function for seting state of game over
-  function gameOverhandler() {
+  function gameOverhandler(numberOfRounds) {
     setGameIsOver(true);
+    setGuessRounds(numberOfRounds);
   }
 
   function startNewGameHandler() {
